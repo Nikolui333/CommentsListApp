@@ -1,10 +1,7 @@
 package com.sem.commentslistapp.presentation
 
 import android.app.Application
-import com.sem.commentslistapp.presentation.di.AppComponent
-import com.sem.commentslistapp.presentation.di.AppModule
-import com.sem.commentslistapp.presentation.di.CommentsSubComponent
-import com.sem.commentslistapp.presentation.di.Injector
+import com.sem.commentslistapp.presentation.di.*
 
 class CommentsApp : Application(), Injector {
 
@@ -12,9 +9,9 @@ class CommentsApp : Application(), Injector {
 
     override fun onCreate() {
         super.onCreate()
-/*        appComponent = DaggerAppComponent.builder()
+        appComponent = DaggerAppComponent.builder()
             .appModule(AppModule(applicationContext))
-            .build()*/
+            .build()
 
     }
 
