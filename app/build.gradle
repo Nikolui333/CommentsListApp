@@ -43,6 +43,7 @@ dependencies {
     def arch_version = "2.1.0"
     def coroutines_version = '1.6.4'
     def koin_version = '3.2.0'
+    def dagger_version = "2.41"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
@@ -74,4 +75,7 @@ dependencies {
     implementation "io.insert-koin:koin-android:$koin_version"
     // Koin Java Compatibility
     implementation "io.insert-koin:koin-android-compat:$koin_version"
+
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
 }
